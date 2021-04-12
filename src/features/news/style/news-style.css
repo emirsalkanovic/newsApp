@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainLoadingContainer {
+  display: flex;
+  height: 100vh;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sortContainer {
+  display: flex;
+  flex-direction: "row";
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #5967c3;
+  border-bottom: 2px solid #5967c3;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sortItemText {
+  color: #5967c3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.activeSortItemText {
+  background-color: #5967c3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.showMoreButtonHolder {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.showMoreButtonHolder button {
+  border: 1px solid #5967c3;
+  border-radius: 7px;
+  color: #5967c3;
+  background-color: white;
+  font-weight: bold;
+  width: 150px;
+}
