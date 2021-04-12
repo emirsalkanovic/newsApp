@@ -260,10 +260,9 @@ const MainNewsScreen = props => {
           <Row>
             {newsData.map((article, key) => {
               return (
-                <Col xs={12} md={6} lg={4} xl={3}>
+                <Col key={key} xs={12} md={6} lg={4} xl={3}>
                   <ArticleCard
                     onViewFullArticle={() => onViewArticle(article)}
-                    key={key}
                     article={article}
                   />
                 </Col>
@@ -296,10 +295,9 @@ const MainNewsScreen = props => {
           <Row>
             {newsData.map((article, key) => {
               return (
-                <Col xs={12} md={6} lg={4} xl={3}>
+                <Col key={key} xs={12} md={6} lg={4} xl={3}>
                   <ArticleCard
                     onViewFullArticle={() => onViewArticle(article)}
-                    key={key}
                     article={article}
                   />
                 </Col>
